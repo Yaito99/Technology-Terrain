@@ -1,0 +1,17 @@
+{
+  "name": "aabc",
+  "version": "1.0.0",
+  "description": "nothin",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently --names \"SASS,WATCH,SERVE\" -c \"bgBlue.bold,bgMagenta.bold,bgGreen.bold\" \"npm run sass\" \"npm run sass:watch\" \"npm run serve\"",
+    "serve": "live-server",
+    "sass": "sass style/style.scss style/style.css",
+    "sass:watch": "npm run sass -- --watch"
+  },
+  "author": "no",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "concurrently": "^3.6.1"
+  }
+}
